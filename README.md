@@ -61,6 +61,7 @@ Note:
 4. 進入暫存區(add)，提交版本(commit)
 打開hello_git.txt，隨便做一點修改
 <img width="668" alt="截圖 2023-11-21 下午3 21 06" src="https://github.com/EdChang716/git-practice/assets/151502659/26cbfadb-2fbe-44ed-820f-c390614395dd">
+
 **將.txt加入暫存區**
     $ git add hello_git.txt
 **將.txt commit**
