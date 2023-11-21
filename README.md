@@ -94,6 +94,7 @@ Note:若反悔想將檔案移出暫存區
 2. **若檔案已經在repository內 : git reset HEAD 檔案名稱**
 
 5. **Summary**
+    # 利用另外一個功能git log查看所有的commit紀錄：
     git clone   
     clone下來別人的專案到local端
     git init  
