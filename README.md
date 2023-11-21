@@ -140,14 +140,17 @@ Step1: 進到要上傳的repo ，點選“Code” -> “HTTPS” -> 把網址複
 <img width="674" alt="截圖 2023-11-21 下午4 21 46" src="https://github.com/EdChang716/git-practice/assets/151502659/460d4b01-a260-45ca-9871-04f04c304263">
 
 Step2: git clone 下載 remote repo
+
 		$ git clone https://github.com/EdChang716/git-practice.git
 		Username for 'https://github.com': 帳號名稱
 		Password for 'https://EdChang716@github.com': 貼上personal access token
+
 成功後，發現原本**指定的資料夾內多了下載好的Git repo files**(
 <img width="262" alt="截圖 2023-11-21 下午4 25 25" src="https://github.com/EdChang716/git-practice/assets/151502659/04c58f37-d7c3-4f0b-abdb-f8cdaab28e9b">  
 
 Step3: 把要上傳的檔案/資料夾手動拉進剛clone的repo -> git-practice
 用git status查看檔案狀態
+
 		$ git status
 		On branch main
 		Your branch is up to date with 'origin/main'.
@@ -157,6 +160,7 @@ Step3: 把要上傳的檔案/資料夾手動拉進剛clone的repo -> git-practic
 			new file:   hello_git.txt
 
 Step4: 把檔案加入至暫存區中
+
 		$ git add .
 		# or git add hello_git.txt僅加入txt檔案
 		$ git status
@@ -168,6 +172,7 @@ Step4: 把檔案加入至暫存區中
 			new file:   hello_git.txt
 
 Step5: git commit
+
 		$ git commit -m 'Add a txt file'
 		$ git status
 		On branch main
@@ -177,6 +182,7 @@ Step5: git commit
 		nothing to commit, working tree clean
 
 Step6: 將更新的repo上傳至Github repo(practice-git)
+
 		$ git push
 		Enumerating objects: 4, done.
 		Counting objects: 100% (4/4), done.
