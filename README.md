@@ -41,7 +41,6 @@ ref: [Git基本指令教學](https://hackmd.io/@Heidi-Liu/note-git)
     $ cd ~/desktop/project_git/  
     $ touch hello_git.txt  
     
-   
 建立本地Git repo
     
     $ git init
@@ -56,6 +55,7 @@ ref: [Git基本指令教學](https://hackmd.io/@Heidi-Liu/note-git)
 	  hello_git.txt
 
     nothing added to commit but untracked files present (use "git add" to track)
+
 可以看出尚未有檔案被追蹤，需使用 `git add .` 將整個資料夾加入追蹤！
 Note:
   *輸入git add 主檔名.副檔名將修改推到Staging Area。如果只打git add不輸入檔案名稱，就會將整個資料夾的檔案都一起推送上去到Staging Area。*
