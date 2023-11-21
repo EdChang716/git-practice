@@ -43,6 +43,7 @@ ref: [Git基本指令教學](https://hackmd.io/@Heidi-Liu/note-git)
     
    
 3. 建立本地Git repo
+    
     $ git init
     Initialized empty Git repository in /Users/edward/Desktop/project_git/.git/
     #查看目前的git狀態
