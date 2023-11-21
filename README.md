@@ -1,4 +1,4 @@
-# git-practice
+# Git-practice
 Git practice as a Tuturial
 Git 是一種分散式版本控制系統，主要用於追蹤和管理軟體開發項目的代碼變更。以下是 Git 的一些基本概念和操作：
 
