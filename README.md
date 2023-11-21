@@ -40,6 +40,11 @@ ref: [Git基本指令教學](https://hackmd.io/@Heidi-Liu/note-git)
     $ # 建立一個空檔案 hello_git.txt
     $ cd ~/desktop/project_git/
     $ touch hello_git.txt
+    
+    # 查看修改後的檔案狀態
+    $ git status
+    On branch main
+    nothing to commit, working tree clean
    
 3. 建立本地Git repo
     $ git init
