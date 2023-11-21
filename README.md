@@ -32,14 +32,14 @@ $ git config -- list
 ref: [Git基本指令教學](https://hackmd.io/@Heidi-Liu/note-git)
 
 # Build your own repo on local(本地端)  
-1. 先在桌面建立一個資料夾，以及一個空的txt檔案  
+1. 先在桌面建立一個資料夾，以及一個空的txt檔案    
     
-    #進入桌面創建一個新的資料夾 project_git
-    $ cd~ /desktop
-    $ mkdir project_git
-    #建立一個空檔案 hello_git.txt
-    $ cd ~/desktop/project_git/
-    $ touch hello_git.txt
+    #進入桌面創建一個新的資料夾 project_git  
+    $ cd~ /desktop  
+    $ mkdir project_git  
+    #建立一個空檔案 hello_git.txt  
+    $ cd ~/desktop/project_git/  
+    $ touch hello_git.txt  
     
    
 3. 建立本地Git repo
