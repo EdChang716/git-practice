@@ -37,11 +37,11 @@ ref: [Git基本指令教學](https://hackmd.io/@Heidi-Liu/note-git)
 進入桌面創建一個新的資料夾 project_git
     $ cd~ /desktop
     $ mkdir project_git
-    $ # 建立一個空檔案 hello_git.txt
+    # 建立一個空檔案 hello_git.txt
     $ cd ~/desktop/project_git/
     $ touch hello_git.txt
     
-    # 查看修改後的檔案狀態
+    # 進入桌面創建一個新的資料夾 project_git
     $ git status
     On branch main
     nothing to commit, working tree clean
