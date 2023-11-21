@@ -34,10 +34,10 @@ ref: [Git基本指令教學](https://hackmd.io/@Heidi-Liu/note-git)
 # Build your own repo on local(本地端)  
 1. 先在桌面建立一個資料夾，以及一個空的txt檔案  
     
-    # 進入桌面創建一個新的資料夾 project_git
+    #進入桌面創建一個新的資料夾 project_git
     $ cd~ /desktop
     $ mkdir project_git
-    # 建立一個空檔案 hello_git.txt
+    #建立一個空檔案 hello_git.txt
     $ cd ~/desktop/project_git/
     $ touch hello_git.txt
     
@@ -59,7 +59,7 @@ ref: [Git基本指令教學](https://hackmd.io/@Heidi-Liu/note-git)
 Note:
   *輸入git add 主檔名.副檔名將修改推到Staging Area。如果只打git add不輸入檔案名稱，就會將整個資料夾的檔案都一起推送上去到Staging Area。*
 
-4. 進入暫存區(add)，提交版本(commit)
+5. 進入暫存區(add)，提交版本(commit)
 打開hello_git.txt，隨便做一點修改
 <img width="668" alt="截圖 2023-11-21 下午3 21 06" src="https://github.com/EdChang716/git-practice/assets/151502659/26cbfadb-2fbe-44ed-820f-c390614395dd">
 
