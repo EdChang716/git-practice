@@ -195,7 +195,7 @@ Step6: 將更新的repo上傳至Github repo(practice-git)
 		To https://github.com/EdChang716/git-practice.git
    		1f94014..f69556e  main -> main
 **上Github repo確認檔案已更新**
-
+ref: [Git新手教學](https://kopu.chat/git%e6%96%b0%e6%89%8b%e5%85%a5%e9%96%80%e6%95%99%e5%ad%b8-part-2/#lwptoc2)
 
 
 
