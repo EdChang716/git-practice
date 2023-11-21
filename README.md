@@ -40,9 +40,79 @@ ref: [Git基本指令教學](https://hackmd.io/@Heidi-Liu/note-git)
     # 建立一個空檔案 hello_git.txt
     $ cd ~/desktop/project_git/
     $ touch hello_git.txt
-2. 
+   
+2. 建立本地Git repo
+    $ git init
+    Initialized empty Git repository in /Users/edward/Desktop/project_git/.git/
+    #查看目前的git狀態
+    $ git status
+    On branch main
+    No commits yet
+
+    Untracked files:
+    (use "git add <file>..." to include in what will be committed)
+	  hello_git.txt
+
+    nothing added to commit but untracked files present (use "git add" to track)
+可以看出尚未有檔案被追蹤，需使用 `git add .` 將整個資料夾加入追蹤！
+Note:
+  *輸入git add 主檔名.副檔名將修改推到Staging Area。如果只打git add不輸入檔案名稱，就會將整個資料夾的檔案都一起推送上去到Staging Area。*
+
+4. 進入暫存區(add)，提交版本(commit)
+打開hello_git.txt，隨便做一點修改
+<img width="668" alt="截圖 2023-11-21 下午3 21 06" src="https://github.com/EdChang716/git-practice/assets/151502659/26cbfadb-2fbe-44ed-820f-c390614395dd">
+**將.txt加入暫存區**
+    $ git add hello_git.txt
+**將.txt commit**
+    # -m 代表輸入訊息(only one line)
+    $ git commit -m 'Add a line'
+       [main (root-commit) 3491550] Add a line
+    1 file changed, 1 insertion(+)
+    create mode 100644 hello_git.txt
+
+Note:
+  *由於 git commit -m僅能輸入一行評論；如果想要比較詳細的評論時，可改為輸入git commit -e就能打開編輯器、撰寫超過一行的評論。*
     
+    # 查看修改後的檔案狀態
+    $ git status
+    On branch main
+    nothing to commit, working tree clean
+表示目前暫存區沒有東西
 
+    # 利用另外一個功能git log查看所有的commit紀錄：
+    $ git log
+    ommit 3491550d4ca2b6924f1c859627c82c078a342366 (HEAD -> main)
+    Author: Edward Chang <edward.chang.0716@gmail.com>
+    Date:   Tue Nov 21 15:24:26 2023 +0800
 
+        Add a line
 
+Note:若反悔想將檔案移出暫存區 
+要移除Staing Area中的檔案，我們必須根據檔案狀態採用不同的指令：
+1. **若該檔案不在repository內 : git rm –cached 檔案名稱**
+2. **若檔案已經在repository內 : git reset HEAD 檔案名稱**
+
+5. **Summary**
+    git clone   
+    clone下來別人的專案到local端
+    git init  
+    創建一個新的Repository (打開任何一個專案資料夾打上git init)
+    add add 主檔名.副檔名   
+    將檔案提交入Staging Areagit add 整個資料夾提交入Staging Area 
+    git commit -m '一行解說文字'  
+    將檔案提交入Repository git commit -e 能用編輯器撰寫多行解說文字
+    git rm --cached 檔案名稱 
+    將不在Repository的檔案移出Staging Area
+    git reset HEAD 
+    將已經在Repository的檔案移出Staging Area
+    git status
+    查看目前檔案的狀態
+    git log
+    查看目前所有commit的歷史紀錄
+    git diff
+    可以看到修改過後的檔案內部紀錄
+    git show 
+    詳細列出該次commit的修改內容
+
+# 將本地端repo or files 推送至 Remote (Github repo) 中
 
