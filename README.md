@@ -42,7 +42,7 @@ ref: [Git基本指令教學](https://hackmd.io/@Heidi-Liu/note-git)
     $ touch hello_git.txt  
     
    
-3. 建立本地Git repo
+建立本地Git repo
     
     $ git init
     Initialized empty Git repository in /Users/edward/Desktop/project_git/.git/
@@ -60,7 +60,7 @@ ref: [Git基本指令教學](https://hackmd.io/@Heidi-Liu/note-git)
 Note:
   *輸入git add 主檔名.副檔名將修改推到Staging Area。如果只打git add不輸入檔案名稱，就會將整個資料夾的檔案都一起推送上去到Staging Area。*
 
-5. 進入暫存區(add)，提交版本(commit)
+進入暫存區(add)，提交版本(commit)
 打開hello_git.txt，隨便做一點修改
 <img width="668" alt="截圖 2023-11-21 下午3 21 06" src="https://github.com/EdChang716/git-practice/assets/151502659/26cbfadb-2fbe-44ed-820f-c390614395dd">
 
@@ -95,7 +95,7 @@ Note:若反悔想將檔案移出暫存區
 1. **若該檔案不在repository內 : git rm –cached 檔案名稱**
 2. **若檔案已經在repository內 : git reset HEAD 檔案名稱**
 
-5. **Summary**
+## **Summary**
     $ git clone 
     clone下來別人的專案到local端
     $ git init  
