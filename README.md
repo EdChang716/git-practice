@@ -111,11 +111,86 @@ Note:若反悔想將檔案移出暫存區
     $ git status
     查看目前檔案的狀態
     $ git log
-    查看目前所有commit的歷史紀錄
+    查看目前所有commit的歷史紀錄，按q可退出
     $ git diff
     可以看到修改過後的檔案內部紀錄
     $ git show 
     詳細列出該次commit的修改內容
 
 # 將本地端repo or files 推送至 Remote (Github repo) 中
+本地資料夾：project_gist
+remote repo: git-practice
+## 登入Git 帳號（2021年後用HTTP方法，不能使用personal password）
+		(base) edward@zhangzhiyuandeMacBook-Pro project_git % git clone https://github.com/EdChang716/git-practice.git
+		Cloning into 'git-practice'...
+		Username for 'https://github.com': Edward Chang
+		Password for 'https://Edward Chang@github.com': 
+		remote: Support for password authentication was removed on August 13, 2021.
+		remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+
+Solution steps:
+1. Github 頭像點擊
+2. Settings
+3. Developer setting
+4. Create personal token(classic)
+5. 全部點選
+6. 複製personal access token
+
+Step1: 進到要上傳的repo ，點選“Code” -> “HTTPS” -> 把網址複製下來
+<img width="674" alt="截圖 2023-11-21 下午4 21 46" src="https://github.com/EdChang716/git-practice/assets/151502659/460d4b01-a260-45ca-9871-04f04c304263">
+
+Step2: git clone 下載 remote repo
+		$ git clone https://github.com/EdChang716/git-practice.git
+		Username for 'https://github.com': 帳號名稱
+		Password for 'https://EdChang716@github.com': 貼上personal access token
+成功後，發現原本**指定的資料夾內多了下載好的Git repo files**(
+<img width="262" alt="截圖 2023-11-21 下午4 25 25" src="https://github.com/EdChang716/git-practice/assets/151502659/04c58f37-d7c3-4f0b-abdb-f8cdaab28e9b">  
+
+Step3: 把要上傳的檔案/資料夾手動拉進剛clone的repo -> git-practice
+用git status查看檔案狀態
+		$ git status
+		On branch main
+		Your branch is up to date with 'origin/main'.
+
+		Changes to be committed:
+  		(use "git restore --staged <file>..." to unstage)
+			new file:   hello_git.txt
+
+Step4: 把檔案加入至暫存區中
+		$ git add .
+		# or git add hello_git.txt僅加入txt檔案
+		$ git status
+		On branch main
+		Your branch is up to date with 'origin/main'.
+
+		Changes to be committed:
+  		(use "git restore --staged <file>..." to unstage)
+			new file:   hello_git.txt
+
+Step5: git commit
+		$ git commit -m 'Add a txt file'
+		$ git status
+		On branch main
+		Your branch is ahead of 'origin/main' by 1 commit.
+  		(use "git push" to publish your local commits)
+
+		nothing to commit, working tree clean
+
+Step6: 將更新的repo上傳至Github repo(practice-git)
+		$ git push
+		Enumerating objects: 4, done.
+		Counting objects: 100% (4/4), done.
+		Delta compression using up to 10 threads
+		Compressing objects: 100% (2/2), done.
+		Writing objects: 100% (3/3), 307 bytes | 307.00 KiB/s, done.
+		Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+		To https://github.com/EdChang716/git-practice.git
+   		1f94014..f69556e  main -> main
+**上Github repo確認檔案已更新**
+
+
+
+
+
+
 
