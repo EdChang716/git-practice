@@ -34,10 +34,10 @@ ref: [Git基本指令教學](https://hackmd.io/@Heidi-Liu/note-git)
 # Build your own repo on local(本地端）
 1. 先在桌面建立一個資料夾，以及一個空的txt檔案
 
-    # 進入桌面創建一個新的資料夾 project_git
+    $ # 進入桌面創建一個新的資料夾 project_git
     $ cd~ /desktop 
     $ mkdir project_git
-    # 建立一個空檔案 hello_git.txt
+    $ # 建立一個空檔案 hello_git.txt
     $ cd ~/desktop/project_git/
     $ touch hello_git.txt
    
@@ -94,26 +94,26 @@ Note:若反悔想將檔案移出暫存區
 2. **若檔案已經在repository內 : git reset HEAD 檔案名稱**
 
 5. **Summary**
-    # 利用另外一個功能git log查看所有的commit紀錄：
-    git clone   
+
+    $ git clone   
     clone下來別人的專案到local端
-    git init  
+    $ git init  
     創建一個新的Repository (打開任何一個專案資料夾打上git init)
-    add add 主檔名.副檔名   
+    $ add add 主檔名.副檔名   
     將檔案提交入Staging Areagit add 整個資料夾提交入Staging Area 
-    git commit -m '一行解說文字'  
+    $ git commit -m '一行解說文字'  
     將檔案提交入Repository git commit -e 能用編輯器撰寫多行解說文字
-    git rm --cached 檔案名稱 
+    $ git rm --cached 檔案名稱 
     將不在Repository的檔案移出Staging Area
-    git reset HEAD 
+    $ git reset HEAD 
     將已經在Repository的檔案移出Staging Area
-    git status
+    $ git status
     查看目前檔案的狀態
-    git log
+    $ git log
     查看目前所有commit的歷史紀錄
-    git diff
+    $ git diff
     可以看到修改過後的檔案內部紀錄
-    git show 
+    $ git show 
     詳細列出該次commit的修改內容
 
 # 將本地端repo or files 推送至 Remote (Github repo) 中
