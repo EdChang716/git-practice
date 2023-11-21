@@ -16,10 +16,11 @@ Git 是一種分散式版本控制系統，主要用於追蹤和管理軟體開�
 <img width="794" alt="截圖 2023-11-21 下午2 49 26" src="https://github.com/EdChang716/git-practice/assets/151502659/d5e3acbf-2228-4322-812e-7258ab400701">
 
 ## First time using Git with Mac
-$ git config --global user.name "your username"
-$ git config --global user.email your_email
-$ git config -- list
-#應該會看到剛剛設定的帳戶名稱與email
+
+		$ git config --global user.name "your username"
+		$ git config --global user.email your_email
+		$ git config -- list
+		#應該會看到剛剛設定的帳戶名稱與email
 
 ## Git 基本指令
 1. `git init`：初始化當前位置，讓 Git 對這個目錄進行版控
