@@ -203,7 +203,7 @@ push 時注意檔案大小，最大2GB
    		1f94014..f69556e  main -> main
      
 		# set緩存大小
-    $ git config --global http.postBuffer 157286400
+    	$ git config --global http.postBuffer 157286400
 
 **上Github repo確認檔案已更新**  
 ref: [Git新手教學](https://kopu.chat/git%e6%96%b0%e6%89%8b%e5%85%a5%e9%96%80%e6%95%99%e5%ad%b8-part-2/#lwptoc2)
