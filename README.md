@@ -1,5 +1,5 @@
 # Git-practice
-Git practice as a Tuturial
+Git practice as a Tutorial
 Git 是一種分散式版本控制系統，主要用於追蹤和管理軟體開發項目的代碼變更。以下是 Git 的一些基本概念和操作：
 
 1. 版本控制系統： Git 可以幫助開發者追蹤代碼的變化，記錄每一次修改的內容，以及誰、什麼時候進行了這些修改。這使得團隊成員可以協同工作，而不會擔心代碼的混亂或遺失。
