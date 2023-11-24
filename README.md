@@ -30,9 +30,11 @@ Git 是一種分散式版本控制系統，主要用於追蹤和管理軟體開�
 4. `git commit -am "message"`：新建一個版本（把 temp 資料夾改名為"版本號"）
    *若有新檔案，需重複步驟 3. 把所有檔案加進版本控制，才能執行 commit*
 5. 在 commit 之前，可用 `git diff` 查看與上一版的差異
-6. `git checkout <版本號>`： 可以切換各個版本（去到某個資料夾底下） git checkout master ： 回到最新版本
+6. `git switch(or checkout) <branch>`： 可以切換各個版本（去到某個資料夾底下） git switch(or checkout) main ： 回到main
    
-ref: [Git基本指令教學](https://hackmd.io/@Heidi-Liu/note-git)
+Ref: 
+1. [Git基本指令教學](https://hackmd.io/@Heidi-Liu/note-git)
+2. [switch vs. checkout](https://ioflood.com/blog/git-switch-vs-checkout-pros-and-cons/#:~:text=Git%20Switch%20and%20Git%20Checkout%20are%20both%20used%20for%20switching,on%20switching%20and%20creating%20branches.)
 
 # Build your own repo on local(本地端)  
 先在桌面建立一個資料夾，以及一個空的txt檔案    
